@@ -1,0 +1,27 @@
+{
+    "name": "green-sense-api",
+    "sourceType": "module",
+    "version": "1.0.0",
+    "description": "Green Sense Api",
+    "scripts": {
+        "start": "node src/mqtt.js & node src/telegram.js",
+        "format": "prettier --write src/**/*.js",
+        "lint": "eslint src/**/*.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sebastianlarrea/GreenSense.git"
+    },
+    "author": "SLH - YL",
+    "license": "UNLICENSED",
+    "devDependencies": {
+        "eslint": "^8.52.0",
+        "prettier": "^2.0.5"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "mqtt": "^4.2.7",
+        "socket.io": "^4.7.2"
+    }
+}
