@@ -1,0 +1,10 @@
+{
+  "config": {
+    "temperature": true,
+    "temperatureThreshold": "38",
+    "humidity": true,
+    "humidityThreshold": "90",
+    "temperatureAndHumidity": true,
+    "waterPumpStatus": true
+  }
+}

@@ -22,11 +22,12 @@ io.on('connection', (socket) => {
     });
 });
 
-setInterval(() => {
-  io.emit('green-sense-event', (Math.random().toFixed(3)*3) + 7);
-}, 1000);
+
+const postDataToClient = (data) => io.emit('green-sense-read-sensors', data); 
 
 const SOCKER_SERVER_PORT = 4202;
 server.listen(SOCKER_SERVER_PORT, () => {
   console.log(`server running at http://localhost:${SOCKER_SERVER_PORT}`);
 });
+
+module.exports = { postDataToClient };
